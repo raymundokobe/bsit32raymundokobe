@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Projects </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+body {
+	background-color: #212121;
+}
+
+p { background-color: #121212; 
+	color: #b3b3b3;
+	font-size:140%;
+	font-family:arial;
+	margin: 15px; 
+	padding: 20px;
+}
+
+ul {
+	list-style-type:  none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:  #121212;
+}
+
+li {
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding:  20px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #7f14aa;
+}
+
+li a.active {
+ 
+ background-color: #7f14aa;
+  color: white;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+	<li> <a  href="home.html"> Home </a> </li>
+	<li> <a href="music.html"> Music </a> </li>
+	<li> <a href="movie.html"> Movies </a> </li>
+	<li> <a href="tv shows.html"> TV Shows </a> </li>
+	<li> <a href="About Me.html"> About Me </a> </li>
+	<li> <a class="active" href="my projects.html"> My Projects </a> </li>
+</ul>
+
+<div style=" background-color: #121212;height: 205px;">
+<pre style="font-family: monospace; font-size: 150%;  color: #b3b3b3;">
+<img src="pictures/shinso.jpg" alt="online avatar" style="float: left;border: 2px solid #121212;height: 200px;width: 200px;"><h2 style="color: #b3b3b3;"> Stuff I'm working on </h2> Let me show you some of my side projects that I've been working these days. As you may already know, <br> I am really into music and films, that is why I have formed a liking in video editing wherein I combine <br> Music that I love with meaningful scenes from different shows that I like.
+
+</pre>
+</div>
+<br>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video style="border: 5px solid #7f14aa;" id="video1" width="920">
+    <source src="pictures/arcane poppy.mp4" type="video/mp4">
+    <source src="pictures/arcane poppy.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1220; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 520; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 720; 
+} 
+</script> 
+
+<p> The song from the music video above is titled Never Find My Place by one of my favorite artists - Poppy. The clips came from the newly released animated series - Arcane, which is an adaptation of the game League of Legends. I am still not finished with the edits, but I'm planning on completing the whole song once the series has been fully released. </p> 
+
+<div style="text-align: center; background-color:black;	margin: 15px	;">
+<img src="pictures/loading project.gif" alt="circular loading gif">
+<pre style="color:white;padding: 5px;"> I am also working on a discord bot, but I am still not done with the coding. Check it out on discord once I finish it!. </pre>
+</div>
+
+</body>
+</html>

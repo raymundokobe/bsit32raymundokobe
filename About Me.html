@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> About Me </title>
+
+<style>
+
+body {
+	background-color: #212121;
+}
+
+ul {
+	list-style-type:  none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:  #121212;
+}
+
+li {
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding:  20px;
+	text-decoration: none;
+}
+
+
+li a.active {
+ 
+ background-color:#307848;
+  color: white;
+ }
+
+li a:hover:not(.active) {
+  background-color: #307848;
+  color: white;
+}
+
+li a:hover {
+	background-color: #307848;
+}
+
+center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+#snitch {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: hovering;
+  animation-duration: 3s;
+  animation-delay: 6s;
+
+}
+
+@keyframes hovering {
+  0%   {left:0px; top:0px;}
+  25%  {left:-900px; top:0px;}
+  50%  {left:-1160px; top:200px;}
+  75%  {left:30px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<ul style="	
+	list-style-type:  none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:  #121212;">
+
+	<li style="float: left;"> <a href="home.html" style="display: block;color: white;text-align: center;padding:  20px;text-decoration: none;"> Home </a> </li>
+	<li style="float: left;"> <a href="music.html" style="display: block;color: white;text-align: center;padding:  20px;text-decoration: none;"> Music </a> </li>
+	<li style="float: left;"> <a href="movie.html" style="display: block;color: white;text-align: center;padding:  20px;text-decoration: none;"> Movies </a> </li>
+	<li style="float: left;"> <a href="tv shows.html" style="display: block;color: white;text-align: center;padding:  20px;text-decoration: none;"> TV Shows </a> </li>
+	<li style="float: left;"> <a class="active" href="About Me.html" style="display: block;color: white;text-align: center;padding:  20px;text-decoration: none;"> About Me </a> </li>
+	<li style="float: left;"> <a href="my projects.html" style="display: block;color: white;text-align: center;padding:  20px;text-decoration: none;"> My Projects </a> </li>
+</ul>
+
+<br>
+
+
+
+
+<div style="background-color: #307848; padding: 20px; margin: 15px; height: 405px;">
+	
+	<img src="pictures/snitch.gif" id="snitch" style="height:100px; width:100px ;float: right;">
+	
+	<img src="pictures/slytherin.png" id="demo" alt="slytherin logo" style="height: 420px;width: 390px; float: left;">
+
+
+	
+	<h1 id="house" style="color:silver; font-family: times new roman; text-shadow: 2px 2px black;"></h1>
+
+<script>
+document.getElementById("house").innerHTML = "House Slytherin";
+</script>
+
+	
+	<p style="font-family: arial; font-size: 20px;"> Slytherins are ambitious, shrewd, cunning, strong leaders, and achievement-oriented. We have highly developed senses of self-preservation. This means that Slytherins tend to hesitate before acting, so as to weigh all possible outcomes before deciding exactly what should be done. Slytherins tend to take charge and possess strong leadership skills. We are often self-assured and confident of our own competence and can be very loyal</p>
+
+	<p style="font-family: arial; font-size: 20px"> When it comes to choosing our inner circles, we are careful and are picky when it comes to making friends. Despite that, we can be quite loyal and well-bonded with our fellow Slytherins. Slytherins will look out for you and care for you no matter what. Contrary to popular belief, most of us in this house would NOT readily betray our friends for some glory. They care for their own, at the expense of others, though. Slytherins are selectively loyal instead of generally loyal (Hufflepuffs), we might only care for our family and a few friends, but our care for them is quite genuine.</p>
+
+	<button style="background-color: #307848; color: silver; float: left;" onclick="document.getElementById('demo').src='pictures/death eater.png'">Revelio!</button>
+
+</div>
+
+<div style="background-color: #2B8A6F; padding: 20px; margin: 15px;">
+	<h1 style="color:mintcream; text-shadow: 2px 2px black;"> Personality Type: </h1>
+	<img src="pictures/infp.png" alt="INFP picture" style="  border-radius: 12px;
+  padding: 5px; background-color:#ECEDED;">
+	<h2 style="color:mintcream; font-family: arial; text-shadow: 2px 2px black;"> Mediator (INFP) </h2>
+	<p style="font-family: arial; font-size: 20px;"> A Mediator (INFP) is someone who possesses the Introverted, Intuitive, Feeling, and Prospecting personality traits. These rare personality types tend to be quiet, open-minded, and imaginative, and they apply a caring and creative approach to everything they do. </p>
+
+	<p style="font-family: arial; font-size: 20px"> Although I may seem quiet or unassuming, Mediators (INFPs) like me have vibrant, passionate inner lives. Creative and imaginative, we happily lose ourselves in daydreams, inventing all sorts of stories and conversations in our minds. We are known for our sensitivity – Us mediators can have profound emotional responses to music, art, nature, and the people around them. </p>
+</div>
+
+
+
+
+
+</body>
